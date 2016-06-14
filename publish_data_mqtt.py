@@ -85,7 +85,7 @@ def main(credentials, publishing_period):
     while True:
         client.loop()
         # read sensor
-        device_id = '28-0000075dbdd5'
+        device_id = '<my_device_id>'
         sensor_value = read_temperature(device_id)
         # publish temerature data
         message = {
