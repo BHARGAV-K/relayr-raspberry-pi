@@ -11,12 +11,6 @@ def read_temperature(device_id):
         fragments = text.split()
         return float(fragments[-1][2:]) / 1000.
 
-if __name__ == '__main__':
-    try:
-        device_id = sys.argv[1]
-    except IndexError:
-        print('Please enter sensor ID.')
-        sys.exit()
-    while True:
-        print(read_temperature(device_id))
+while True:
+        print(read_temperature('28-000004a365ef'))
         time.sleep(1)
